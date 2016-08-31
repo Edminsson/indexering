@@ -1,0 +1,7 @@
+﻿{
+  "KarmaConfigFile": "karma.conf.js",
+  "Name": "Indexering tests",
+  "Traits": [
+    "Angular"
+  ]
+}

@@ -1,0 +1,28 @@
+{
+  "name": "indexering.web",
+  "version": "1.0.0",
+  "description": "Node packages for Indexering",
+  "main": "index.js",
+  "dependencies": {},
+  "devDependencies": {
+    "del": "^2.2.0",
+    "gulp": "^3.9.0",
+    "gulp-bower": "0.0.13",
+    "gulp-install": "^0.6.0",
+    "gulp-plumber": "^1.1.0",
+    "gulp-shell": "^0.5.2",
+    "jasmine": "^2.4.1",
+    "jasmine-core": "^2.4.1",
+    "karma": "^0.13.19",
+    "karma-chrome-launcher": "^0.2.2",
+    "karma-ie-launcher": "^0.2.0",
+    "karma-jasmine": "^0.3.6",
+    "karma-ng-html2js-preprocessor": "^0.2.1",
+    "run-sequence": "^1.1.5"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC"
+}
