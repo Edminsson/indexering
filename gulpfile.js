@@ -5,6 +5,14 @@ var install = require('gulp-install');
 var shell = require('gulp-shell')
 var plumber = require('gulp-plumber');
 var gulpbower = require('gulp-bower');
+var tslint = require('gulp-tslint')
+
+gulp.task('tslint', function() {
+    return gulp
+    .src('app/**/*.ts')
+    .pipe(tslint())
+
+})
 
 gulp.task('clean', function() {
     return del(['./lib', './app/**/*.js', './app/**/*.js.map']);

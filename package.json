@@ -11,6 +11,8 @@
     "gulp-install": "^0.6.0",
     "gulp-plumber": "^1.1.0",
     "gulp-shell": "^0.5.2",
+    "gulp-tslint": "^6.1.1",
+    "gulp-typescript": "^2.13.6",
     "jasmine": "^2.4.1",
     "jasmine-core": "^2.4.1",
     "karma": "^0.13.19",
