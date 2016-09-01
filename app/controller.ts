@@ -1,8 +1,8 @@
-export class mainController {
+export class MainController {
     constructor(private $scope) {
         this.$scope.titel = 'Min app';
     }
 }
 
 angular.module('app')
-.controller('mainController', mainController);
+.controller('mainController', MainController);

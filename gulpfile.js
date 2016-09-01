@@ -6,13 +6,19 @@ var shell = require('gulp-shell')
 var plumber = require('gulp-plumber');
 var gulpbower = require('gulp-bower');
 var tslint = require('gulp-tslint')
+var gulpprint = require('gulp-print');
 
 gulp.task('tslint', function() {
     return gulp
-    .src('app/**/*.ts')
-    .pipe(tslint())
-
-})
+    .src(['app/**/*.ts', '!app/**/*.d.ts'])
+    .pipe(gulpprint())
+    .pipe(tslint({
+        formatter: 'verbose'
+    }))
+    .pipe(tslint.report({
+        emitError: false
+    }));
+});
 
 gulp.task('clean', function() {
     return del(['./lib', './app/**/*.js', './app/**/*.js.map']);
