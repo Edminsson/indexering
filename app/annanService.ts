@@ -1,6 +1,6 @@
-module IndexeringModule.Extra {
+namespace IndexeringModule.Extra {
 
-    export class AnnanService implements IConfigService {
+    export class AnnanService implements IndexeringModule.Services.IConfigService {
         public configs: {};
 
         static $inject = ['$http', 'appConfig'];
