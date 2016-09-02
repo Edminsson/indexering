@@ -6,6 +6,7 @@ var shell = require('gulp-shell')
 var plumber = require('gulp-plumber');
 var gulpbower = require('gulp-bower');
 var tslint = require('gulp-tslint')
+var tsc = require('gulp-typescript')
 var gulpprint = require('gulp-print');
 
 gulp.task('tslint', function() {
@@ -18,6 +19,13 @@ gulp.task('tslint', function() {
     .pipe(tslint.report({
         emitError: false
     }));
+});
+
+gulp.task('typis', function() {
+    return gulp
+    .src(['app/**/*.ts'])
+    .pipe(tsc())
+    .pipe(gulp.dest('dist'));
 });
 
 gulp.task('clean', function() {

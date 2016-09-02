@@ -3,6 +3,9 @@
 /app/**/*.js
 /app/**/*.js.map
 
+#dist folder
+dist
+
 # Logs
 logs
 *.log
